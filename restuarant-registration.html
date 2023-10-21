@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Restuarant-registration</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231021114827">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="index.html" class="header__logo logo"><span>F</span>-Event</a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="" class="menu__link">Банкетные залы</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Ведущие</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Видеографы</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Фотографы</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Автомобили</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__contact contact-header">
+					<a href="tel:88001234567" class="contact-header__number">8 800 123 45 67</a>
+				</div>
+				<a href="#" class="find-specialists">Подобрать специалистов</a>
+				<div class="header__region region">
+					<span class="region__name">Москва</span>
+					<svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5" fill="none">
+						<path d="M3.64645 4.60355C3.84171 4.79882 4.15829 4.79882 4.35355 4.60355L7.53553 1.42157C7.7308 1.22631 7.7308 0.909728 7.53553 0.714466C7.34027 0.519204 7.02369 0.519204 6.82843 0.714466L4 3.54289L1.17157 0.714466C0.976311 0.519204 0.659728 0.519204 0.464466 0.714466C0.269204 0.909728 0.269204 1.22631 0.464466 1.42157L3.64645 4.60355ZM3.5 4V4.25H4.5V4H3.5Z" fill="#8A657B" />
+					</svg>
+				</div>
+				<div class="header__cta cta-header">
+					<button type="button" class="cta-header__user">
+						<img src="img/icon/user.svg" alt="icon:user">
+						<div class="user-cta__body">
+							<ul class="user-cta__list">
+								<li>
+									<a href="#" class="user-cta__link">Личный кабинет</a>
+								</li>
+								<li>
+									<a href="#" class="user-cta__link">Выход</a>
+								</li>
+							</ul>
+						</div>
+					</button>
+					<a href="#" class="cta-header__shopping-card">
+						<img src="img/icon/shopping-card.svg" alt="icon:shopping-card">
+						<span>22</span>
+					</a>
+				</div>
+			</div>
+		</header>
+		<main class="page page_restuarant-registration">
+			<div class="page-restuarant-registration__container">
+				<div class="decor decor_restuarants-info">
+					<span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="570" height="2" viewBox="0 0 570 2" fill="none">
+							<path opacity="0.4" d="M0 1L570 1.00005" stroke="#8A657B" />
+						</svg>
+					</span>
+					<div class="decor__icon">
+						<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+							<g opacity="0.4">
+								<path d="M1 1L21 21" stroke="#8A657B" />
+								<path d="M21 1L1 21" stroke="#8A657B" />
+							</g>
+						</svg>
+					</div>
+					<span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="570" height="2" viewBox="0 0 570 2" fill="none">
+							<path opacity="0.4" d="M0 1L570 1.00005" stroke="#8A657B" />
+						</svg>
+					</span>
+				</div>
+			</div>
+			<section class="restuarant-registration">
+				<div class="restuarant-registration__container">
+					<div class="restuarant-registration__title">Регистрация</div>
+					<p class="restuarant-registration__descripiton">Выберите тип регистрации</p>
+					<div class="restuarant-registration__checkboxs">
+						<div class="restuarant-registration__checkbox">
+							<input id="c_12" data-error="Ошибка" class="checkbox__input" type="radio" value="1" name="form[]">
+							<label for="c_12" class="checkbox__label checkbox__label_registration"><span class="checkbox__text checkbox__text_registration">
+									Я клиент. Мне нужны специалисты и рестораны
+								</span></label>
+						</div>
+						<div class="restuarant-registration__checkbox">
+							<input id="c_13" data-error="Ошибка" class="checkbox__input" type="radio" value="1" name="form[]">
+							<label for="c_13" class="checkbox__label checkbox__label_registration"><span class="checkbox__text checkbox__text_registration">
+									Я представитель ресторана/специалист
+								</span></label>
+						</div>
+					</div>
+					<div class="restuarant-registration__title">выберите категорию</div>
+					<div class="restuarant-registration__choose">
+						<form class="restuarant-registration__select">
+							<select name="restuarants-registration" id="restuarants-registration">
+								<option value="1">Рестораны</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+							</select>
+							<input placeholder="Имя/Название" type="text" class="restuarant-registration__input">
+						</form>
+					</div>
+					<div class="restuarant-registration__items">
+						<div class="restuarant-registration__item">
+							<div class="restuarant-registration__topic">Город</div>
+							<input placeholder="Москва" type="text" class="restuarant-registration__input">
+						</div>
+						<div class="restuarant-registration__item">
+							<div class="restuarant-registration__topic">Район</div>
+							<input placeholder="ЦАО" type="text" class="restuarant-registration__input">
+						</div>
+						<div class="restuarant-registration__item">
+							<div class="restuarant-registration__topic">Метро рядом</div>
+							<input placeholder="Рижская" type="text" class="restuarant-registration__input">
+						</div>
+						<div class="restuarant-registration__item">
+							<div class="restuarant-registration__topic">Телефон</div>
+							<input placeholder="Введите текст" type="text" class="restuarant-registration__input">
+						</div>
+						<div class="restuarant-registration__item">
+							<div class="restuarant-registration__topic">E-mail</div>
+							<input placeholder="Введите текст" type="text" class="restuarant-registration__input">
+						</div>
+						<div class="restuarant-registration__item">
+							<div class="restuarant-registration__topic">ФИО представителя</div>
+							<input placeholder="Введите текст" type="text" class="restuarant-registration__input">
+						</div>
+					</div>
+					<div class="restuarant-registration__wrapper">
+						<div class="restuarant-registration__line">
+							<div class="restuarant-registration__topic">Описание</div>
+							<textarea placeholder="Введите текст" class="restuarant-registration__textarea"></textarea>
+						</div>
+						<div class="restuarant-registration__address">
+							<div class="restuarant-registration__topic restuarant-registration__topic_address">Адрес:</div>
+							<input placeholder="Введите текст" type="text" class="restuarant-registration__input">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="map">
+				<div class="map__container">
+					<div class="map__image">
+						<img src="img/home/restuarants/map.png" alt="image">
+					</div>
+				</div>
+			</section>
+			<section class="registration-info">
+				<div class="registration-info__container">
+					<div class="registration-info__wrapper">
+						<div class="registration-info__line">
+							<div class="restuarant-registration__topic">3D обзор в Яндекс картах</div>
+							<input placeholder="Вставьте ссылку с Яндекс карт" type="text" class="restuarant-registration__input">
+						</div>
+						<div class="registration-info__items">
+							<div class="registration-info__item">
+								<div class="restuarant-registration__topic">Доступные мероприятия</div>
+								<input placeholder="Выберите несколько из списка" type="text" class="restuarant-registration__input restuarant-registration__input_info">
+							</div>
+							<div class="registration-info__item">
+								<div class="restuarant-registration__topic">Прирепить файл с презенацией PDF</div>
+								<div class="registration-info__send-line">
+									<input id="file2" hidden placeholder="Выберите файл" type="file" class="restuarant-registration__input">
+									<label for="file2" class="file">
+										<span>Выберите файл</span>
+										<button class="restuarant-info__button button">Обзор</button>
+									</label>
+								</div>
+							</div>
+							<div class="registration-info__item">
+								<div class="restuarant-registration__topic restuarant-registration__topic_mobile">Доступные
+									мероприятия</div>
+								<input placeholder="Выберите несколько из списка" type="text" class="restuarant-registration__input restuarant-registration__input_info">
+							</div>
+							<div class="registration-info__item">
+								<div class="restuarant-registration__topic restuarant-registration__topic_mobile">Прирепить файл
+									с презенацией PDF</div>
+								<div class="registration-info__send-line">
+									<input id="file3" hidden placeholder="Выберите файл" type="file" class="restuarant-registration__input">
+									<label for="file3" class="file">
+										<span>Выберите файл</span>
+										<button class="restuarant-info__button button">Обзор</button>
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="photo-albom photo-albom_border-none photo-albom_border-none-double">
+				<div class="photo-albom__container">
+					<div class="photo-albom__top">
+						<div class="photo-albom__title"><span>Фотоальбомы</span></div>
+						<div class="photo-albom__navigation">
+							<button class="photo-albom__prev">
+								<svg xmlns="http://www.w3.org/2000/svg" width="61" height="12" viewBox="0 0 61 12" fill="none">
+									<g opacity="0.2">
+										<path d="M61 6L0.999998 6.00001" stroke="black" />
+										<path d="M6 1L1 6L6 11" stroke="black" />
+									</g>
+								</svg>
+							</button>
+							<button class="photo-albom__prev photo-albom__prev_mobile">
+								<svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12" fill="none">
+									<g opacity="0.2">
+										<path d="M21 6L0.999999 6" stroke="black" />
+										<path d="M6 1L1 6L6 11" stroke="black" />
+									</g>
+								</svg>
+							</button>
+							<button class="photo-albom__next">
+								<svg xmlns="http://www.w3.org/2000/svg" width="61" height="12" viewBox="0 0 61 12" fill="none">
+									<path d="M0 6L60 6.00001" stroke="black" />
+									<path d="M55 1L60 6L55 11" stroke="black" />
+								</svg>
+							</button>
+							<button class="photo-albom__next photo-albom__next_mobile">
+								<svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12" fill="none">
+									<path d="M0 6L20 6" stroke="black" />
+									<path d="M15 1L20 6L15 11" stroke="black" />
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="photo-albom__items">
+						<div class="photo-albom__item">
+							<div class="photo-albom__image">
+								<img src="img/home/photo-albom/01.jpg" alt="image">
+								<span>54</span>
+							</div>
+							<div class="photo-albom__text">Свадьба Руслана и Людмилы</div>
+						</div>
+						<div class="photo-albom__item">
+							<div class="photo-albom__image">
+								<img src="img/home/photo-albom/02.jpg" alt="image">
+								<span>54</span>
+							</div>
+							<div class="photo-albom__text">Свадьба Руслана и Людмилы</div>
+						</div>
+						<div class="photo-albom__item">
+							<div class="photo-albom__image">
+								<img src="img/home/photo-albom/03.jpg" alt="image">
+								<span>54</span>
+							</div>
+							<div class="photo-albom__text">Свадьба Руслана и Людмилы</div>
+						</div>
+					</div>
+					<div class="add-button__wrapper">
+						<button type="button" class="add-button">
+							+ Добавить новый
+						</button>
+						<span>
+							Загружать фото в попапе перетаскиванием или обзором по несколько файлов
+						</span>
+					</div>
+				</div>
+			</section>
+			<section class="video-form">
+				<div class="video-form__container">
+					<div class="video-form__title">Видео</div>
+					<p class="video-form__description">Можно вставить ссылку с Youtube и ВК видео</p>
+					<div class="video-form__inputs">
+						<input placeholder="Ссылка 1" type="text" class="video-form__inputs restuarant-registration__input">
+						<input placeholder="Ссылка 2" type="text" class="video-form__inputs restuarant-registration__input">
+					</div>
+					<div class="video-form__actions">
+						<button class="video-form__add">Добавить еще видео</button>
+						<button class="video-form__button button">Зарегистрироваться</button>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+	<script src="js/app.min.js?_v=20231021114827"></script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Popup-1</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231021114827">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="popup-body">
+	<div class="wrapper">
+		<main class="page">
+			<div class="popup">
+				<div class="popup__container">
+					<div class="popup__wrapper">
+						<div class="popup__top">
+							<div class="popup__header">
+								<span>Комплексный расчёт</span> на мероприятие
+							</div>
+							<button class="popup__close">
+								<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+									<path d="M1 1L21 21" stroke="black" />
+									<path d="M21 1L1 21" stroke="black" />
+								</svg>
+							</button>
+						</div>
+						<div class="popup__form form-popup">
+							<div class="form-popup__lines form-popup__lines_popup-1">
+								<div class="form-popup__line">
+									<label for="events" class="form-popup__label">Тип мероприятия</label>
+									<select class="events_width" name="events" id="events">
+										<option value="1">Свадьба</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</select>
+								</div>
+								<div class="form-popup__line">
+									<label for="restuarants" class="form-popup__label">Тип площадки</label>
+									<select name="restuarants" id="restuarants">
+										<option value="1">Ресторан</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</select>
+								</div>
+								<div class="form-popup__line">
+									<label for="restuarants" class="form-popup__label">Кол-во гостей</label>
+									<input type="text" placeholder="234" class="input">
+								</div>
+								<div class="form-popup__line">
+									<label for="restuarants" class="form-popup__label">Дата проведения</label>
+									<input type="text" placeholder="20.04.2023" class="input">
+								</div>
+								<div class="form-popup__line">
+									<label for="restuarants" class="form-popup__label">Ориентировочная стоимость</label>
+									<input type="text" placeholder="3500" class="input">
+								</div>
+							</div>
+							<p class="form-popup__message">
+								Кто еще нужен на мероприятии
+							</p>
+							<div class="form-popup__checkboxs">
+								<div class="form-group form-group_box">
+									<input type="checkbox" id="1">
+									<label for="1">Ведущий</label>
+								</div>
+								<div class="form-group form-group_box">
+									<input type="checkbox" id="2">
+									<label for="2">Фотограф</label>
+								</div>
+								<div class="form-group form-group_box">
+									<input type="checkbox" id="3">
+									<label for="3">Видеограф</label>
+								</div>
+							</div>
+							<div class="form-popup__action">
+								<button type="submit" class="form-popup__button button">
+									помогите с подбором (бесплатно)
+									<svg xmlns="http://www.w3.org/2000/svg" width="23" height="20" viewBox="0 0 23 20" fill="none">
+										<path d="M0 10L22 10" stroke="white" />
+										<path d="M17 5L22 10L17 15" stroke="white" />
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<script src="js/app.min.js?_v=20231021114827"></script>
+</body>
+
+</html>
